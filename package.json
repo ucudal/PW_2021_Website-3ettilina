@@ -1,0 +1,19 @@
+{
+  "name": "first_project",
+  "version": "1.0.0",
+  "description": "Primer programa del curso de Programacion Web de la UCUDAL - 2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ucudal/PW_2021_Website-3ettilina.git"
+  },
+  "author": "Bettina Carrizo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ucudal/PW_2021_Website-3ettilina/issues"
+  },
+  "homepage": "https://github.com/ucudal/PW_2021_Website-3ettilina#readme"
+}
