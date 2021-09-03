@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-container {
+    @apply flex-auto flex rounded-xl;
+}
+
+.article-container {
+    @apply mt-5 p-3 shadow-lg rounded-md bg-white transform scale-90 overflow-hidden;
+}
+
+.txt-title {
+    @apply text-center text-xl font-medium leading-6;
+}
+
+.txt-subtitle {
+    @apply text-sm font-light text-gray-600 text-center;
+}
+
+.txt-heading {
+    @apply text-xl;
+}
+
+.txt-body {
+    @apply font-normal mx-2 text-gray-600;
+}
+
+.pic-rounded {
+    @apply w-44 h-44 rounded-xl mt-auto mb-auto col-start-1 row-start-1 col-span-3 ml-auto mr-auto;
+}
+
+.link {
+    @apply underline;
+}
+
+.cols-3-2 {
+    @apply flex-auto grid grid-flow-col grid-cols-1 sm:grid-cols-5;
+}
+
+.col-3 {
+    @apply col-span-1 sm:col-start-1 sm:col-span-3;
+}
+
+.col-2 {
+    @apply col-start-1 row-start-2 sm:col-start-4 sm:col-span-2 sm:row-start-1;
+}

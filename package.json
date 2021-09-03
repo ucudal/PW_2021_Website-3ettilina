@@ -1,10 +1,13 @@
 {
-  "name": "first_project",
+  "name": "curriculum_vitae",
   "version": "1.0.0",
   "description": "Primer programa del curso de Programacion Web de la UCUDAL - 2021",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --serveStatic 'docs' --files '**/*'",
+    "tailwind": "npx tailwindcss -i ./src/tailwind.css -o ./docs/style.css",
+    "tailwind:watch": "npm run tailwind -- --watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/ucudal/PW_2021_Website-3ettilina/issues"
   },
-  "homepage": "https://github.com/ucudal/PW_2021_Website-3ettilina#readme"
+  "homepage": "https://github.com/ucudal/PW_2021_Website-3ettilina#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.9"
+  }
 }

@@ -5,28 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.css" rel="stylesheet" />
-    <link href="styles.css" rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
     <title>Curriculum Vitae | Bettina Carrizo</title>
 </head>
 <body class="m-10">
-    <header class="flex-auto flex rounded-xl bg-indigo-400 transform rotate-3">
-        <div class="flex-auto grid grid-cols-1 sm:grid-cols-9 flex rounded-xl bg-blue-300 p-7 transform -rotate-3" >
-            <img class="w-44 h-44 rounded-xl mt-auto mb-auto col-start-1 row-start-1 col-span-3 ml-auto mr-auto" 
+    <header class="header-container bg-indigo-400 transform rotate-3">
+        <div class="header-container sm:grid-cols-9 bg-blue-300 p-7 transform -rotate-3" >
+            <img class="pic-rounded" 
             src="https://media-exp1.licdn.com/dms/image/C5603AQE_Oc7yAgeihQ/profile-displayphoto-shrink_800_800/0/1614700459845?e=1635379200&v=beta&t=ct7VgyQaxtld51DFlqOO-VugwOWnIlDsUiYBJu5Dpbw"
             alt="Profile picture" />
-            <div class="col-start-1 row-start-2 sm:row-start-1 sm:col-start-4 sm:col-span-6 p-6">
-                <h1 class="text-center text-xl font-medium leading-6">Bettina Carrizo</h1>
-                <p class="text-sm font-light text-gray-600 text-center">Systems Engineer in progress | Passionate about healthy living | Married with Failure</p>
-                <div class="flex-auto flex grid grid-flow-col grid-cols-1 grid-row-2 sm:grid-row-1 sm:grid-cols-5">
-                    <article class="col-span-1 sm:col-start-1 sm:col-span-3 mt-5 p-3 shadow-lg rounded-md bg-white transform scale-90 overflow-hidden">
-                        <h2 class="text-xl">About me</h2>
-                        <p class="font-normal mx-2 text-gray-600">I really enjoy mixing tech and human worlds; great communication helps developing ideas better.</p>
+            <div class="p-6">
+                <h1 class="txt-title">Bettina Carrizo</h1>
+                <p class="txt-subtitle">Systems Engineer in progress | Passionate about healthy living | Married with Failure</p>
+                <div class="cols-3-2">
+                    <article class="col-3 article-container">
+                        <h2 class="txt-heading">About me</h2>
+                        <p class="txt-body">I really enjoy mixing tech and human worlds; great communication helps developing ideas better.</p>
                     </article>
-                    <article class="col-start-1 row-start-2 sm:col-start-4 sm:col-span-2 sm:row-start-1 mt-5 p-3 shadow-lg rounded-md bg-white transform scale-90 overflow-hidden">
-                        <h2 class="text-xl">Contact</h2>
-                        <div class="font-normal mx-2 text-gray-600">
-                        <p>Phone: +598 99 999 999</p>
-                        <p>Email: mail@text.com</p>
+                    <article class="col-2 article-container">
+                        <h2 class="txt-heading">Contact</h2>
+                        <div class="txt-body">
+                        <p>LinkedIn: <a class="link" href="https://www.linkedin.com/in/bettina-carrizo/">bettina-carrizo</a></p>
+                        <p>Email: betticarrizo@gmail.com</p>
                         </div>
                     </article>
                 </div>
