@@ -16,7 +16,7 @@ setupButtons()
 function setupButtons() {
     btnOpenContactModal.onclick = handleOpenModal
     btnCloseContactModal.onclick = handleCloseModal
-    btnSubmit.onclick = sendEmailFake
+    btnSubmit.onclick = sendFakeEmail
 
     // If user touches outside the modal, close it
     window.onclick = function(event) {
@@ -34,7 +34,7 @@ function handleCloseModal() {
     modalContent.classList.add("contact__modal--hidden")
 }
 
-function sendEmailFake() {
+function sendFakeEmail() {
     let details = {
         name: iptName.value,
         email: iptEmail.value,
@@ -43,6 +43,7 @@ function sendEmailFake() {
         content: iptContent.value
     }
     
-    alert(`Thanks for contacting me, ${iptName.value}! I'll reach you back as soon as possible :)`)
+    handleCloseModal()
+    alert(`Thanks for contacting me, ${details.name}! I'll reply back as soon as possible :)`)
     console.log(details)
 }
