@@ -42,8 +42,17 @@ function sendFakeEmail() {
         subject: iptSubject.value,
         content: iptContent.value
     }
-    
+
+    clearModalFields()
     handleCloseModal()
     alert(`Thanks for contacting me, ${details.name}! I'll reply back as soon as possible :)`)
     console.log(details)
+}
+
+function clearModalFields() {
+    iptName.value = ''
+    iptEmail.value = ''
+    iptPhone.value = ''
+    iptSubject.value = ''
+    iptContent.value = ''
 }
