@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "browser-sync start --server --serveStatic 'docs' --files '**/*'",
     "tailwind": "tailwindcss -i ./src/tailwind.css -o ./docs/style.css --jit",
-    "tailwind:watch": "npm run tailwind -- --watch"
+    "tailwind:watch": "npm run tailwind -- --watch",
+    "uglify": "npx uglify-js src/script.js -o docs/script.min.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "homepage": "https://github.com/ucudal/PW_2021_Website-3ettilina#readme",
   "dependencies": {
     "@tailwindcss/typography": "^0.4.1",
-    "tailwindcss": "^2.2.11"
+    "tailwindcss": "^2.2.11",
+    "uglify-js": "^3.14.2"
   }
 }
