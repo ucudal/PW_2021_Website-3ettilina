@@ -8,7 +8,7 @@
     "start": "browser-sync start --server --serveStatic 'docs' --files '**/*'",
     "tailwind": "tailwindcss -i ./src/tailwind.css -o ./docs/style.css --jit",
     "tailwind:watch": "npm run tailwind -- --watch",
-    "uglify": "npx uglify-js src/script.js -o docs/script.min.js"
+    "uglify": "npx uglify-js src/script.js -o docs/script.min.js --source-map"
   },
   "repository": {
     "type": "git",
