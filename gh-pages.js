@@ -3,7 +3,7 @@ var ghpages = require('gh-pages');
 ghpages.publish(
     'public',
     {
-        branch: 'main',
+        branch: 'gh-pages',
         repo: 'https://github.com/ucudal/PW_2021_Website-3ettilina.git', 
         user: {
             name: 'Bettina Carrizo',
