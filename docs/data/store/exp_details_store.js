@@ -2,27 +2,29 @@ import { writable } from "svelte/store"
 
 let jobExperienceDetails =
     {
-        date: String,
-        current: Boolean,
-        title: String,
-        place: {
-            name: String,
-            webpage: String
+        fechaInicio: String,
+        fechaFin: String,
+        actual: Boolean,
+        puesto: String,
+        empresa: {
+            nombre: String,
+            web: String
         },
-        description: [String]
+        descripcion: [String]
     }
 
 let studyExperienceDetails =
     {
-        date: String,
-        completed: Boolean,
-        title: String,
-        place: {
-            name: String,
-            webpage: String,
-            certificate: String
+        fechaInicio: String,
+        fechaFin: String,
+        completado: Boolean,
+        titulo: String,
+        instituto: {
+            nombre: String,
+            web: String,
+            certificado: String
         },
-        description: [String]
+        descripcion: [String]
     }
 
 export let jobDetails = writable([jobExperienceDetails])

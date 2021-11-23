@@ -4,7 +4,7 @@ import { getProfileDetails } from "../../data/api/profile_api";
 import { profileData } from "../../data/store/profile_store";
 import Button from "../components/Button.svelte";
 
-export let onContactClick
+export let onContactClick = function(){}
 
 $: {
     onMount(async() => {

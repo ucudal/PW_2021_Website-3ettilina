@@ -1,8 +1,8 @@
 <script>
     export let skill
-    export let skillType
+    export let skillType = ''
 
-    let skillIcon
+    let skillIcon = ''
 
     $:{
         skillIcon = (skillType == 'expertise') ? '⭐️' : '✅'

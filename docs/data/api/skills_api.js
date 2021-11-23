@@ -3,7 +3,7 @@ import { baseUrl } from "./base_api"
 
 
 export function getSkillsDetails() {
-    fetch(`${baseUrl}/skills`)
+    fetch(`${baseUrl}/habilidades`)
     .then(response => response.json()
         .then(data => {
             skillsData.set(data)

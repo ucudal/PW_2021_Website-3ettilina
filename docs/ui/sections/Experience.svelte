@@ -1,5 +1,5 @@
 <script>
-    import { getExperienceDetails } from "../../data/api/experience_api"
+    import { getJobExperience, getStudies } from "../../data/api/experience_api"
     import ExperienceContainer from "../components/ExperienceContainer.svelte"
     import { jobDetails, studyDetails } from "../../data/store/exp_details_store";
     import { onMount } from "svelte";
@@ -7,7 +7,8 @@
     $: {
         onMount(async() => {
             console.log("Fetching experience")
-            getExperienceDetails()
+            getJobExperience()
+            getStudies()
         })
     }
 </script>
